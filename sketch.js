@@ -20,6 +20,8 @@ function setup() {
   // physics shit
   frameRate(24);
    canvas = createCanvas(w, windowHeight);
+      let newCanvasX = (windowWidth -200)/2;
+  canvas.position(newCanvasX, 0);
 
   engine = Engine.create();
   world = engine.world;
