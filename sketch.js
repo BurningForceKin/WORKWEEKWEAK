@@ -20,7 +20,6 @@ function setup() {
   // physics shit
   frameRate(24);
    canvas = createCanvas(w, windowHeight);
-    canvas.touchStarted();
       let newCanvasX = (windowWidth -200)/2;
   canvas.position(newCanvasX, 0);
 
