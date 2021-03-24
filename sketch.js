@@ -20,6 +20,7 @@ function setup() {
   // physics shit
   frameRate(24);
    canvas = createCanvas(w, windowHeight);
+    canvas.touchStarted();
       let newCanvasX = (windowWidth -200)/2;
   canvas.position(newCanvasX, 0);
 
@@ -38,6 +39,10 @@ function setup() {
 }
 
 function keyPressed(){
+            boxes.push(new Box(random(50, 150), 10, 40, 20, r));
+}
+
+function touchStarted(){
             boxes.push(new Box(random(50, 150), 10, 40, 20, r));
 }
 
